@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Assignment.org</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/081da666ae.js" crossorigin="anonymous"></script>
+        
+</head>
+<body>
+
+    <header>
+    <div class="flex-container">
+        <div class="box">
+            <h3 class="secondary-header">TOTAL EXPENSES</h3>
+            <h4 class="balance">N2,500
+                <span class="icon">  <i class="fa-regular fa-eye-slash fa-beat-fade" style="color: yellow;"></i> </span>
+            </h4>
+        </div>
+        <div class="box">
+            <h3 class="secondary-header">TOTAL INCOME</h3>
+            <h4 class="balance">N3,000 
+                <span class="icon"><i class="fa-regular fa-eye-slash fa-beat-fade" style="color: #24720e;"></i>  </span>
+            </h4>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</header>
+<main>
+    <div class="flex-container ">
+        <form class="input-container" id="expenseForm">
+            <label for="expense" class="form-label">Expenses</label>
+            <input type="number" name="expense" id="expense" placeholder="Enter your Expense"  >
+            <input type="submit" value="ADD" class="submitbtn">
+        </form>
+        <form class="input-container" id="incomeForm">
+            <label for="income" class="form-label">Incomes</label>
+            <input type="number" name="income" id="income" placeholder="Enter your income">
+            <input type="submit" value="ADD" class="submitbtn">
+        </form>
+    </div>
+    <div class="flex-container mt-4">
+        <div class="expenses">
+            <h3 class="title">Expenses</h3>
+            <ol class="list-wrapper" id="expense-list">
+             
+            </ol>
+        </div>
+        <div class="incomes">
+            <h3 class="title">Incomes</h3>
+            <ol class="list-wrapper" id="income-list">
+
+            </ol>
+        </div>
+    </div>
+</main>
+
+
+    <script src="./app.js"> </script>
+</body>
+</html>
